@@ -62,3 +62,6 @@ npm run dev
 Brauzerda oching:
 - **Konstruktor:** [http://localhost:3000](http://localhost:3000)
 - **Admin Panel:** [http://localhost:3000/admin](http://localhost:3000/admin)
+
+
+google sheet [https://docs.google.com/spreadsheets/d/1HrSTBbKln2XN3y4MzsaHUdHPsAg_U7FpEICXpljyhkw/edit?gid=499265340#gid=499265340]
