@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍹 FreshMix - Custom Drink Constructor (Ichimliklar Konstruktori)
 
-## Getting Started
+Next.js (App Router), Tailwind CSS, Framer Motion va TypeScript asosida yaratilgan zamonaviy interaktiv ichimlik konstruktori va buyurtmalarni qabul qilish tizimi.
 
-First, run the development server:
+---
 
+## 🚀 Asosiy Imkoniyatlar
+
+### 1. 🧪 Interaktiv Ichimlik Konstruktori
+- **Turli xil tabiiy ta'mlar:** Qulupnay, Limon-Yalpiz (Moxito), Mango-Marakuya, Tarvuz, Moviy Lagun, Kraft Kola, Shaftoli, Ko'k Choy-Yasmin, Energetik Taurin, Malina, Kivi va boshqalar.
+- **Milligramm (mg) bo'yicha aniq doza:** Har bir ta'mni 50mg dan 2500mg gacha o'rnatish, qadamlar (+100mg, +250mg, +500mg).
+- **Idish hajmlari:** 
+  - `0.5 L` (Ixcham)
+  - `1.0 L` (Standart)
+  - `1.5 L` (Katta)
+  - `2.0 L` (Mega Party)
+- **Vizual Jonli Namoyish:**
+  - Idish o'lchamining dinamik o'zgarishi
+  - Tanlangan ta'mlarning suyuqlik qatlamlari va ranglarining uyg'unlashishi
+  - Gazlilik darajasiga qarab ko'pik va pufakchalar animatsiyasi
+  - Muz bo'laklari, yangi limon/laym bo'laklari, yalpiz barglari va Boba donachalari suzib yurishi
+  - Idish yorlig'ida ichimlikning maxsus nomi
+- **Qo'shimcha parametrlar:**
+  - Gazlilik (Gazsiz, Yengil, O'rtacha, Kuchli)
+  - Muz miqdori (0%, 25%, 50%, 75%, 100%)
+  - Shirinlik va shakar turi (Tabiiy shakar, Stevia 0 kkal, Asal, Shakarsiz)
+  - Qo'shimchalar (Popping Boba, Chia urug'lari, Vitamin C 1000mg, Kollagen)
+  - Kaloriya va narx hisoblagichi
+
+### 2. 📋 Buyurtmalar va To'lov
+- Mijoz ma'lumotlari (Ism, Telefon, Manzil, Izoh)
+- To'lov turlari (Payme, Click, Uzum, Naqd)
+- Bayramona konfetti animatsiyasi va to'liq chek-retseptini chop etish (Print)
+
+### 3. 🛡 Boshqaruv Paneli (Admin)
+- `/admin` sahifasida barcha buyurtmalarni real vaqtda ko'rish
+- Holatlarni boshqarish: `Yangi`, `Tayyorlanmoqda`, `Yetkazilmoqda`, `Yakunlandi`, `Bekor qilindi`
+- Har bir buyurtmaning aniq retsepti va mg dozalarini ko'rish
+- **1-bosishda Excel yuklab olish (.xlsx)** (Foydalanuvchi buyurtmalarini to'liq Excel faylga eksport qilish)
+- Qidiruv va filterlash
+
+### 4. 🤖 Telegram Bot Integratsiyasi
+- Yangi buyurtma tushganda avtomatik ravishda buyurtma ID, mijoz telefoni, manzili, to'lov turi va ichimlikning mg retsepti Telegram chat/guruhga chiroyli formatda yuboriladi.
+
+### 5. 📊 Google Sheets (Online Excel) Integratsiyasi
+- Admin paneldagi sozlamalardan Google Apps Script webhook manzilini ulab, barcha buyurtmalarni to'g'ridan-to'g'ri Online Google Sheets jadvaliga avtomatik yozdirib borish mumkin.
+
+---
+
+## 💻 Loyihani Ishga Tushirish
+
+Loyihaning katalogiga o'ting:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd C:\Users\User\.gemini\antigravity\scratch\drink-constructor
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Lokal serverni ishga tushiring:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Brauzerda oching:
+- **Konstruktor:** [http://localhost:3000](http://localhost:3000)
+- **Admin Panel:** [http://localhost:3000/admin](http://localhost:3000/admin)

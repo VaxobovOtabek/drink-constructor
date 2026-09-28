@@ -1,0 +1,58 @@
+import { Additive } from '@/types';
+
+export const ADDITIVES_DATA: Additive[] = [
+  {
+    id: 'boba_pearls',
+    name: 'Popping Boba (Mango)',
+    nameUz: 'Mango Boba Donachalari',
+    price: 4000,
+    icon: '🟡',
+    color: '#F59E0B',
+    calories: 35,
+  },
+  {
+    id: 'chia_seeds',
+    name: 'Organic Chia Seeds',
+    nameUz: 'Organik Chia Urug\'lari',
+    price: 3000,
+    icon: '🌱',
+    color: '#4B5563',
+    calories: 20,
+  },
+  {
+    id: 'fresh_mint',
+    name: 'Fresh Mint Leaves',
+    nameUz: 'Yangi Yalpiz Barglari',
+    price: 2000,
+    icon: '🌿',
+    color: '#10B981',
+    calories: 2,
+  },
+  {
+    id: 'lemon_slice',
+    name: 'Fresh Lemon & Lime Slices',
+    nameUz: 'Limon va Laym Bo\'laklari',
+    price: 2500,
+    icon: '🍋',
+    color: '#EAB308',
+    calories: 5,
+  },
+  {
+    id: 'vitamin_c',
+    name: 'Vitamin C 1000mg Booster',
+    nameUz: 'Vitamin C 1000mg Immun Booster',
+    price: 3500,
+    icon: '💊',
+    color: '#F97316',
+    calories: 0,
+  },
+  {
+    id: 'collagen_booster',
+    name: 'Natural Collagen Shot',
+    nameUz: 'Go\'zallik uchun Kollagen',
+    price: 5000,
+    icon: '✨',
+    color: '#EC4899',
+    calories: 15,
+  },
+];

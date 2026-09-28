@@ -1,0 +1,48 @@
+import { BottleSize } from '@/types';
+
+export const BOTTLE_SIZES: BottleSize[] = [
+  {
+    id: '0.5',
+    liters: 0.5,
+    label: '0.5L Banka',
+    nameUz: 'Klassik Banka (0.5 L)',
+    basePrice: 12000,
+    maxCapacityMg: 1500,
+    recommendedFlavorMg: 600,
+    heightRatio: 0.75,
+    widthRatio: 0.65,
+  },
+  {
+    id: '1.0',
+    liters: 1.0,
+    label: '1.0L Banka',
+    nameUz: 'Katta Banka (1.0 L)',
+    basePrice: 18000,
+    maxCapacityMg: 2500,
+    recommendedFlavorMg: 1000,
+    heightRatio: 0.9,
+    widthRatio: 0.8,
+  },
+  {
+    id: '1.5',
+    liters: 1.5,
+    label: '1.5L Banka',
+    nameUz: 'King Banka (1.5 L)',
+    basePrice: 24000,
+    maxCapacityMg: 3500,
+    recommendedFlavorMg: 1500,
+    heightRatio: 0.98,
+    widthRatio: 0.9,
+  },
+  {
+    id: '2.0',
+    liters: 2.0,
+    label: '2.0L Banka',
+    nameUz: 'Party Banka (2.0 L)',
+    basePrice: 30000,
+    maxCapacityMg: 4500,
+    recommendedFlavorMg: 2000,
+    heightRatio: 1.05,
+    widthRatio: 1.0,
+  },
+];
